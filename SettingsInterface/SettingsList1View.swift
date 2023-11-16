@@ -13,6 +13,7 @@ struct SettingsList1View: View {
     let labelColor: Color
     let title: String
 //    let button: toggle
+    let showArrow: Bool
     
     var body: some View {
         
@@ -28,10 +29,16 @@ struct SettingsList1View: View {
                     .foregroundColor(.white)
                 Spacer()
                 
+                if showArrow == true {
+                    Image(systemName: "chevron.right")
+                        .resizable()
+                        .scaledToFit()
+                        .frame(height: 25)
+                        .foregroundColor(.white)
+                }
             }
             .padding()
         }
-        .padding(.horizontal)
     }
 }
 
@@ -39,6 +46,16 @@ struct SettingsList1View: View {
     SettingsList1View(
         label: Image(systemName: "faceid"),
         labelColor: .green,
-        title: "Face ID"
+        title: "Face ID",
+        showArrow: true
+    )
+}
+
+#Preview {
+    SettingsList1View(
+        label: Image(systemName: "faceid"),
+        labelColor: .green,
+        title: "Face ID",
+        showArrow: false
     )
 }

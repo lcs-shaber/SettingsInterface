@@ -24,13 +24,15 @@ struct ContentView: View {
                     SettingsList1View(
                         label: Image(systemName: "faceid"),
                         labelColor: .green,
-                        title: "Face ID"
+                        title: "Face ID",
+                        showArrow: false
                     )
                     
                     SettingsList1View(
                         label: Image(systemName: "arrow.triangle.2.circlepath.icloud.fill"),
                         labelColor: .blue,
-                        title: "iCloud Sync"
+                        title: "iCloud Sync",
+                        showArrow: false
                     )
                     
                     Spacer()
@@ -38,7 +40,8 @@ struct ContentView: View {
                     SettingsList1View(
                         label: Image(systemName: "crown.fill"),
                         labelColor: .orange,
-                        title: "Premium (Subscribed)"
+                        title: "Premium (Subscribed)",
+                        showArrow: false
                     )
                 }
             }
