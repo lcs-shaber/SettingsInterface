@@ -12,7 +12,7 @@ struct SettingsList1View: View {
     let label: Image
     let labelColor: Color
     let title: String
-//    let button: toggle
+    let button: Bool
     let showArrow: Bool
     
     var body: some View {
@@ -36,6 +36,10 @@ struct SettingsList1View: View {
                         .frame(height: 25)
                         .foregroundColor(.white)
                 }
+                
+                if button == true {
+                    Toggle ("Lights", isOn: Binding.constant(true))
+                }
             }
             .padding()
         }
@@ -47,6 +51,7 @@ struct SettingsList1View: View {
         label: Image(systemName: "faceid"),
         labelColor: .green,
         title: "Face ID",
+        button: false,
         showArrow: true
     )
 }
@@ -56,6 +61,17 @@ struct SettingsList1View: View {
         label: Image(systemName: "faceid"),
         labelColor: .green,
         title: "Face ID",
+        button: false,
+        showArrow: false
+    )
+}
+
+#Preview {
+    SettingsList1View(
+        label: Image(systemName: "faceid"),
+        labelColor: .green,
+        title: "Face ID",
+        button: true,
         showArrow: false
     )
 }

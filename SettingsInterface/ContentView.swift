@@ -25,6 +25,7 @@ struct ContentView: View {
                         label: Image(systemName: "faceid"),
                         labelColor: .green,
                         title: "Face ID",
+                        button: true,
                         showArrow: false
                     )
                     
@@ -32,6 +33,7 @@ struct ContentView: View {
                         label: Image(systemName: "arrow.triangle.2.circlepath.icloud.fill"),
                         labelColor: .blue,
                         title: "iCloud Sync",
+                        button: true,
                         showArrow: false
                     )
                     
@@ -41,6 +43,7 @@ struct ContentView: View {
                         label: Image(systemName: "crown.fill"),
                         labelColor: .orange,
                         title: "Premium (Subscribed)",
+                        button: false,
                         showArrow: false
                     )
                 }
