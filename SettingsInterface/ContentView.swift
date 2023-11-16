@@ -32,23 +32,16 @@ struct ContentView: View {
                         labelColor: .blue,
                         title: "iCloud Sync"
                     )
-                }
-            }
-            
+                    
                     Spacer()
-            
-            Group{
-                List{
-                    settingsList2View(
+                    
+                    SettingsList1View(
                         label: Image(systemName: "crown.fill"),
                         labelColor: .orange,
                         title: "Premium (Subscribed)"
                     )
-                    
                 }
             }
-            
-                    Spacer()
         }
         .padding()
     }
