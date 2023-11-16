@@ -42,11 +42,54 @@ struct ContentView: View {
                     )
                 }
             }
+            .listStyle(.plain)
         }
-        .padding()
     }
 }
 
 #Preview {
-    ContentView()
+
+//Tab bar
+    
+    TabView (selection: Binding.constant(5)) {
+        
+        Text("Overview")
+            .tabItem {
+                Image(systemName: "rectangle.fill.on.rectangle.fill")
+                Text("Overview")
+            }
+            .tag(1)
+        
+        Text("Safari")
+            .tabItem {
+                Image(systemName: "safari.fill")
+                Text("Safari")
+            }
+            .tag(2)
+        
+        Text("Firewall")
+            .tabItem {
+                Image(systemName: "firewall.fill")
+                Text("Firewall")
+            }
+            .tag(3)
+        
+        Text("News")
+            .tabItem {
+                Image(systemName: "newspaper.fill")
+                Text("News")
+            }
+            .tag(4)
+        
+        ContentView()
+            .tabItem {
+                Image(systemName: "gearshape.fill")
+                Text("Settings")
+            }
+            .tag(5)
+    }
+    
+    .accentColor(.blue)
+    
+    .preferredColorScheme(.dark)
 }

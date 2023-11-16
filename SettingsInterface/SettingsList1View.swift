@@ -15,14 +15,23 @@ struct SettingsList1View: View {
 //    let button: toggle
     
     var body: some View {
-        HStack{
-            Text(label)
-                .foregroundColor(labelColor)
-            Text(title)
-                .foregroundColor(.gray)
-            Spacer()
-            
+        
+        ZStack{
+            RoundedRectangle(cornerRadius: 15)
+                .fill(.darkGray)
+                .frame(height: 50)
+                
+            HStack{
+                Text(label)
+                    .foregroundColor(labelColor)
+                Text(title)
+                    .foregroundColor(.white)
+                Spacer()
+                
+            }
+            .padding()
         }
+        .padding(.horizontal)
     }
 }
 
