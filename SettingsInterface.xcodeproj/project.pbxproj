@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E0C360F42B05962A006DCC43 /* SettingsList1View.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0C360F32B05962A006DCC43 /* SettingsList1View.swift */; };
+		E0C360F62B059F01006DCC43 /* settingsList2View.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0C360F52B059F01006DCC43 /* settingsList2View.swift */; };
 		E0FD5E432B05391F00AFCB35 /* SettingsInterfaceApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0FD5E422B05391F00AFCB35 /* SettingsInterfaceApp.swift */; };
 		E0FD5E452B05391F00AFCB35 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0FD5E442B05391F00AFCB35 /* ContentView.swift */; };
 		E0FD5E472B05392100AFCB35 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E0FD5E462B05392100AFCB35 /* Assets.xcassets */; };
@@ -14,6 +16,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E0C360F32B05962A006DCC43 /* SettingsList1View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsList1View.swift; sourceTree = "<group>"; };
+		E0C360F52B059F01006DCC43 /* settingsList2View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = settingsList2View.swift; sourceTree = "<group>"; };
 		E0FD5E3F2B05391F00AFCB35 /* SettingsInterface.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SettingsInterface.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E0FD5E422B05391F00AFCB35 /* SettingsInterfaceApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsInterfaceApp.swift; sourceTree = "<group>"; };
 		E0FD5E442B05391F00AFCB35 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -53,6 +57,8 @@
 			children = (
 				E0FD5E422B05391F00AFCB35 /* SettingsInterfaceApp.swift */,
 				E0FD5E442B05391F00AFCB35 /* ContentView.swift */,
+				E0C360F32B05962A006DCC43 /* SettingsList1View.swift */,
+				E0C360F52B059F01006DCC43 /* settingsList2View.swift */,
 				E0FD5E462B05392100AFCB35 /* Assets.xcassets */,
 				E0FD5E482B05392100AFCB35 /* Preview Content */,
 			);
@@ -137,7 +143,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E0C360F62B059F01006DCC43 /* settingsList2View.swift in Sources */,
 				E0FD5E452B05391F00AFCB35 /* ContentView.swift in Sources */,
+				E0C360F42B05962A006DCC43 /* SettingsList1View.swift in Sources */,
 				E0FD5E432B05391F00AFCB35 /* SettingsInterfaceApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
