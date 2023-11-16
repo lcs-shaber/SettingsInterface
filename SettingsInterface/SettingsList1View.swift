@@ -17,11 +17,12 @@ struct SettingsList1View: View {
     
     var body: some View {
         
+       
         ZStack{
             RoundedRectangle(cornerRadius: 15)
                 .fill(.darkGray)
                 .frame(height: 50)
-                
+            
             HStack{
                 Text(label)
                     .foregroundColor(labelColor)
@@ -33,8 +34,8 @@ struct SettingsList1View: View {
                     Image(systemName: "chevron.right")
                         .resizable()
                         .scaledToFit()
-                        .frame(height: 25)
-                        .foregroundColor(.white)
+                        .frame(height: 15)
+                        .foregroundColor(.gray)
                 }
                 
                 if button == true {

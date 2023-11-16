@@ -46,6 +46,62 @@ struct ContentView: View {
                         button: false,
                         showArrow: false
                     )
+                    
+                    Spacer()
+                    
+                    SettingsList1View(
+                        label: Image(systemName: "questionmark.circle"),
+                        labelColor: .purple,
+                        title: "FAQ",
+                        button: false,
+                        showArrow: true
+                    )
+                    
+                    SettingsList1View(
+                        label: Image(systemName: "checkmark.circle"),
+                        labelColor: .green,
+                        title: "How to Enable",
+                        button: false,
+                        showArrow: false
+                    )
+                    
+                    Spacer ()
+                    
+                    SettingsList1View(
+                        label: Image(systemName: "star.square.fill"),
+                        labelColor: .red,
+                        title: "Rate 1Blocker",
+                        button: false,
+                        showArrow: false
+                    )
+                    
+                    SettingsList1View(
+                        label: Image(systemName: "bird.circle.fill"),
+                        labelColor: .blue,
+                        title: "Follow Us",
+                        button: false,
+                        showArrow: false
+                    )
+
+                    SettingsList1View(
+                        label: Image(systemName: "envelope"),
+                        labelColor: .blue,
+                        title: "Send Feedback",
+                        button: false,
+                        showArrow: false
+                    )
+                    
+                    Spacer ()
+                    
+                    SettingsList1View(
+                        label: Image(systemName: "info.circle"),
+                        labelColor: .purple,
+                        title: "About",
+                        button: false,
+                        showArrow: true
+                    )
+
+                    
                 }
             }
             .listStyle(.plain)
