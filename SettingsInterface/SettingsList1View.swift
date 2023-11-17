@@ -24,7 +24,10 @@ struct SettingsList1View: View {
                 .frame(height: 50)
             
             HStack{
-                Text(label)
+                label
+                    .resizable()
+                    .scaledToFit()
+                    .frame(height: 30)
                     .foregroundColor(labelColor)
                 Text(title)
                     .foregroundColor(.white)

@@ -23,90 +23,95 @@ struct ContentView: View {
             Group{
                 List{
                     
-                    SettingsList1View(
-                        label: Image(systemName: "faceid"),
-                        labelColor: .green,
-                        title: "Face ID",
-                        button: true,
-                        showArrow: false
-                    )
+                    Section {
+                        SettingsList1View(
+                            label: Image("FaceID"),
+                            labelColor: .green,
+                            title: "Face ID",
+                            button: true,
+                            showArrow: false
+                        )
+                        
+                        SettingsList1View(
+                            label: Image("iCloudSync"),
+                            labelColor: .blue,
+                            title: "iCloud Sync",
+                            button: true,
+                            showArrow: false
+                        )
+                    }
                     
-                    SettingsList1View(
-                        label: Image(systemName: "arrow.triangle.2.circlepath.icloud.fill"),
-                        labelColor: .blue,
-                        title: "iCloud Sync",
-                        button: true,
-                        showArrow: false
-                    )
+                          
+                    Section {
+                        SettingsList1View(
+                            label: Image("Premium"),
+                            labelColor: .orange,
+                            title: "Premium (Subscribed)",
+                            button: false,
+                            showArrow: false
+                        )
+                        
+                    }
                     
-                    Spacer()
+                    Section {
+                        SettingsList1View(
+                            label: Image("FAQ"),
+                            labelColor: .purple,
+                            title: "FAQ",
+                            button: false,
+                            showArrow: true
+                        )
+                        
+                        SettingsList1View(
+                            label: Image("HowToEnable"),
+                            labelColor: .green,
+                            title: "How to Enable",
+                            button: false,
+                            showArrow: false
+                        )
+                        
+                    }
                     
-                    SettingsList1View(
-                        label: Image(systemName: "crown.fill"),
-                        labelColor: .orange,
-                        title: "Premium (Subscribed)",
-                        button: false,
-                        showArrow: false
-                    )
+                    Section {
+                        SettingsList1View(
+                            label: Image("Rate1Blocker"),
+                            labelColor: .red,
+                            title: "Rate 1Blocker",
+                            button: false,
+                            showArrow: false
+                        )
+                        
+                        SettingsList1View(
+                            label: Image("FollowUs"),
+                            labelColor: .blue,
+                            title: "Follow Us",
+                            button: false,
+                            showArrow: false
+                        )
+                        
+                        SettingsList1View(
+                            label: Image("SendFeedback"),
+                            labelColor: .blue,
+                            title: "Send Feedback",
+                            button: false,
+                            showArrow: false
+                        )
+                        
+                    }
                     
-                    Spacer()
-                    
-                    SettingsList1View(
-                        label: Image(systemName: "questionmark.circle"),
-                        labelColor: .purple,
-                        title: "FAQ",
-                        button: false,
-                        showArrow: true
-                    )
-                    
-                    SettingsList1View(
-                        label: Image(systemName: "checkmark.circle"),
-                        labelColor: .green,
-                        title: "How to Enable",
-                        button: false,
-                        showArrow: false
-                    )
-                    
-                    Spacer ()
-                    
-                    SettingsList1View(
-                        label: Image(systemName: "star.square.fill"),
-                        labelColor: .red,
-                        title: "Rate 1Blocker",
-                        button: false,
-                        showArrow: false
-                    )
-                    
-                    SettingsList1View(
-                        label: Image(systemName: "bird.circle.fill"),
-                        labelColor: .blue,
-                        title: "Follow Us",
-                        button: false,
-                        showArrow: false
-                    )
-
-                    SettingsList1View(
-                        label: Image(systemName: "envelope"),
-                        labelColor: .blue,
-                        title: "Send Feedback",
-                        button: false,
-                        showArrow: false
-                    )
-                    
-                    Spacer ()
-                    
-                    SettingsList1View(
-                        label: Image(systemName: "info.circle"),
-                        labelColor: .purple,
-                        title: "About",
-                        button: false,
-                        showArrow: true
-                    )
-
+                    Section {
+                        SettingsList1View(
+                            label: Image("About"),
+                            labelColor: .purple,
+                            title: "About",
+                            button: false,
+                            showArrow: true
+                        )
+                    }
                     
                 }
             }
-            .listStyle(.plain)
+            .listStyle(.grouped)
         }
     }
 }
