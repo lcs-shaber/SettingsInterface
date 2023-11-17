@@ -10,7 +10,6 @@ import SwiftUI
 struct SettingsList1View: View {
     
     let label: Image
-    let labelColor: Color
     let title: String
     let button: Bool
     let showArrow: Bool
@@ -28,7 +27,6 @@ struct SettingsList1View: View {
                     .resizable()
                     .scaledToFit()
                     .frame(height: 30)
-                    .foregroundColor(labelColor)
                 Text(title)
                     .foregroundColor(.white)
                 Spacer()
@@ -53,7 +51,6 @@ struct SettingsList1View: View {
 #Preview {
     SettingsList1View(
         label: Image(systemName: "faceid"),
-        labelColor: .green,
         title: "Face ID",
         button: false,
         showArrow: true
@@ -63,7 +60,6 @@ struct SettingsList1View: View {
 #Preview {
     SettingsList1View(
         label: Image(systemName: "faceid"),
-        labelColor: .green,
         title: "Face ID",
         button: false,
         showArrow: false
@@ -73,7 +69,6 @@ struct SettingsList1View: View {
 #Preview {
     SettingsList1View(
         label: Image(systemName: "faceid"),
-        labelColor: .green,
         title: "Face ID",
         button: true,
         showArrow: false
