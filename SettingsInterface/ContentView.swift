@@ -16,7 +16,9 @@ struct ContentView: View {
                     .font(Font.system(size: 40))
                     .bold()
                 Spacer()
+                    
             }
+            .padding(.horizontal)
             
             Group{
                 List{
